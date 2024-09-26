@@ -148,7 +148,7 @@ predictions = mlp.predict(X_test)
 
 flower_predictions = le.inverse_transform(predictions)
 
-# Print results
+
 print(flower_predictions)  
 print(confusion_matrix(y_test, predictions))
 print(classification_report(y_test, predictions))
